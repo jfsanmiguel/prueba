@@ -1,0 +1,9 @@
+h1 {
+    color: #000;
+}
+.container {
+    background-color: aqua;
+}
+#footer {
+    border: 1px salmon;
+}
