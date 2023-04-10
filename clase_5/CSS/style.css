@@ -1,0 +1,37 @@
+.flex-padre{
+    /* como queremos que se porte */
+    display: flex;
+    /* Dirección */
+    flex-direction: row;
+    /* Wrap */
+    flex-wrap: wrap;
+    /* Justify content */
+    justify-content: center;
+    justify-content: space-evenly;
+    /* Align items necesito tener espacio de altura para moverlo */
+    height: 150px;
+    align-items: center;
+    
+}
+
+.flex-padre img {
+    width: 200px;
+    /* box model */
+    padding: 5px;
+}
+.presentacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.presentacion img{
+    width: 438px;
+}
+.presentacion p{
+    width: 415px;
+    text-align: center;
+}
+.presentacion h1{
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+/* h1 de color azul */
+/* estilos generales */
+h1 {
+    color: blue;
+    
+}
+
+/* estilos contaco.html */
+#main_contacto {
+    /* color violeta de fondo y letra blanca */
+background-color: blueviolet;
+color: white;
+}
+/* estilo index.html */
+#main_index {
+    background-color: aqua;
+    font-family: serif;
+    text-align: center;
+    background-image: url("../images/1101265.jpg");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.parrafo_importante {
+    color: brown;
+    /* 16px es el tamaño predeterminado */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.parrafo_largo {
+    color: beige;
+}
+.negrita {
+    font-weight: bolder;
+    text-decoration: underline;
+    font-style: italic;
+}
+.verde{
+    /* solo deberia usarse máximo 3 important prioriza su uso */
+    color: green !important;
+}
+ul{
+    list-style: circle;
+}
+ol{
+    list-style-type: upper-roman ;
+}

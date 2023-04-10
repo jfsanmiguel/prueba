@@ -1,0 +1,83 @@
+/* estrategia mobile first */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    border: 1px solid black;
+}
+
+.grid-container {
+    background-color: cyan;
+    color: white;
+    width: 300px;
+    margin: 20px auto;
+    /* mostrar como grilla */
+    display: grid;
+    /* Especificaciones de la grilla */
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: 75px 50px 125px;
+    /* contenido */
+    justify-items: center;
+    align-items: center;
+    /* Esta propiedad funciona solo si no se toma todo el espacio del padre */
+    justify-content: center;
+    align-content: center;
+
+}
+
+.grid-container div {
+    border: 2px solid white;
+}
+
+/* grid areas */
+.grid-area {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    /* template */
+    grid-template-areas:
+        "nav header header header header"
+        "nav principal principal principal aside"
+        "nav secundaria secundaria secundaria aside"
+        "nav footer footer footer footer"
+    ;
+}
+
+.header {
+    background-color: coral;
+    grid-area: header;
+}
+
+.principal {
+    background-color: aquamarine;
+    grid-area: principal;
+}
+
+.secundaria {
+    background-color: blueviolet;
+    grid-area: secundaria;
+}
+
+.nav {
+    background-color: crimson;
+    grid-area: nav;
+}
+
+.aside {
+    background-color: darkgoldenrod;
+    grid-area: aside;
+}
+
+.footer {
+    background-color: blue;
+    grid-area: footer;
+}
+
+/* Media Querys mobile first -- min width */
+@media (min-width: 376px) {
+    .header {
+        background-color: darkslategray;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+}

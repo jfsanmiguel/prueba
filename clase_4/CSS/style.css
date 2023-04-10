@@ -1,0 +1,59 @@
+/* tipografia  1001font| fontpair.co |fonts.google.com*/
+/* fuente local */
+@font-face {
+    font-family: "kurri island";
+    src: url("../recursos/typo/KurriIslandItaPERSONAL-Light.ttf");
+}
+/* fuente externa */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: "kurri island";
+    background-color: darkred;
+    margin: 15px;
+    padding: 25px;
+    border: solid 3px beige;
+}
+p {
+    font-family: 'Roboto Slab', serif;
+    width: 150px;
+    display: inline;
+    background-color: azure;
+    border: solid 3px black;
+}
+/* nav  bar */
+nav ul{
+    background-color: crimson;
+    /* unidad de medida absoluta */
+    width: 350px;
+    height: 250px;
+    /* Rebalse */
+    overflow: auto;
+    
+}
+.inicio{
+    /* absolute y relative | fixed y sticky */
+    position: fixed;
+}
+.li_inicio{
+    position: fixed;
+    bottom: 150px;
+    right: 0
+    ;
+}
+.li_redes{
+    position: sticky;
+    top: 10px;
+    left: 0;
+}
+img{
+    width: 100px;
+}
+/* footer */
+footer a{
+    display: block;
+}
